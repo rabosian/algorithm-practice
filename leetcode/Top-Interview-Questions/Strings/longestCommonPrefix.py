@@ -9,8 +9,3 @@ def longestCommonPrefix(strs):
         result += temp[i][0]
     return result
 
-
-
-
-strs = ["flower","flow","flight"]
-print(longestCommonPrefix(strs))
