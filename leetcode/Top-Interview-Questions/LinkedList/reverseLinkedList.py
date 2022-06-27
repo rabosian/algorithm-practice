@@ -18,7 +18,7 @@ def reverseList_recursive(head):
     if head == None or head.next == None:
         return head
     
-    rest = self.reverseList(head.next) # self for leetcode submission
+    rest = reverseList_recursive(head.next)
     head.next.next = head
     head.next = None
     return rest
