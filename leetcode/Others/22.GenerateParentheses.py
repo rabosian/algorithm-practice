@@ -1,8 +1,10 @@
 def generateParenthesis(n):
     def generate(p, left, right, result=[]):
         if left:
+            print(p)
             generate(p + '(', left-1,right)
         if right > left:
+            print(p)
             generate(p + ')', left, right-1)
         if not right:
             result.append(p)
@@ -10,6 +12,6 @@ def generateParenthesis(n):
 
     return generate('', n, n)
 
-# recursion 공부하기
-n = 4
+
+n = 2
 print(generateParenthesis(n))
