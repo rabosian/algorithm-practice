@@ -12,4 +12,4 @@ def isPowerOfFour(n):
 
 
 
-print(isPowerOfFour(0))
+print(isPowerOfFour(64))
