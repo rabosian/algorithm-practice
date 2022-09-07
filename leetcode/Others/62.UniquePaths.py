@@ -1,6 +1,17 @@
 def uniquePaths(m,n):
-    # m: rows, n: cols => matrix[m][n]
-    if m or n == 1:
+    if m == 1 or n == 1:
         return 1
-    if m or n == 2:
-        return m if m == 2 else n
+    # row = [i for i in range(1,n+1)]
+    row = [1] * n
+    for i in range(m-1):
+        newRow = [1] * n
+        for j in range(n - 2, -1, -1):
+            newRow[j] = newRow[j+1] + row[j]
+        row = newRow
+    return row[0]
+
+print(uniquePaths(3,5))
+# ans = 10
+# 10 6 3 1
+#  4 3 2 1
+#  1 1 1 1
