@@ -11,7 +11,3 @@ def uniquePaths(m,n):
     return row[0]
 
 print(uniquePaths(3,5))
-# ans = 10
-# 10 6 3 1
-#  4 3 2 1
-#  1 1 1 1

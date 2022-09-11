@@ -1,4 +1,3 @@
-
 def maxProfit(prices):
     profit = 0
     for i in range(0, len(prices)-1):
